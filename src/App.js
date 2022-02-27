@@ -34,7 +34,14 @@ function App() {
         console.log('Randomization complete.')
       }}
   }
-  // randomize()
+  let loading = (partnerState.length>0?'': <svg className='loading' viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <path fill="none" stroke="whitesmoke"
+    d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+  <circle r="5" fill="salmon">
+    <animateMotion dur="10s" repeatCount="indefinite"
+      path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+  </circle>
+</svg>)
 
   let partnersToDisplay = partnerState.length>0?partnerState.map((group,index) =>{
     return(
@@ -54,6 +61,7 @@ function App() {
     function handleRandomizeClick(){
       randomize();
     }
+    
   
   return (
     <body>
@@ -62,6 +70,7 @@ function App() {
       <header className="App-header">
         <button className='random-button' onClick={handleRandomizeClick}>Roll the Dice</button>
         {partnersToDisplay}
+        {loading}
       </header>
       <div className="spacer"></div>
     </div>

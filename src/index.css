@@ -96,3 +96,9 @@ h1 {
 .spacer {
   padding-bottom: 100px;
 }
+
+.loading {
+  height: 600px;
+  position: absolute;
+  left: 3%;
+}
