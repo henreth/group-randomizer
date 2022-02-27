@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/group-randomizer/static/css/main.dea31d01.css",
+    "main.js": "/group-randomizer/static/js/main.b960aaa3.js",
+    "index.html": "/group-randomizer/index.html",
+    "main.dea31d01.css.map": "/group-randomizer/static/css/main.dea31d01.css.map",
+    "main.b960aaa3.js.map": "/group-randomizer/static/js/main.b960aaa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dea31d01.css",
+    "static/js/main.b960aaa3.js"
+  ]
+}
